@@ -4,6 +4,7 @@ body {
     padding: 0;
     font-family: 'Open Sans','Helvetica Neue',Helvetica, sans-serif;
     line-height: 1.45;
+    align-items: center;
 }
 header {
     color: #FFFFFF;
@@ -54,11 +55,13 @@ section{
     padding: 20px 0;
 }
 #button-actual{
+    align-items: center;
     background-color: #549DA0;
     color: white;
-    padding: 10px 16px;
+    padding: 15px 20px;
     border: none;
     border-radius: 5px;
+    font-size: 30px;
 }
 #button-actual:hover {
     background-color:#468486;
@@ -68,4 +71,16 @@ section{
     text-align: center;
     font-size: 40px;
     background-color: pink;
+    padding: 15px 0;
+    font-weight: 900;
+}
+#box-model{
+    margin: 0 10px 0 10px;
+}
+#output{
+
+    height: 100%;
+    width: 100%;
+
+
 }

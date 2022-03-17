@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <div class="container">
+        <div class="container" onclick="refreshPage()">
             <h1>MemeMe</h1>
             <h2>The Ultimate Self Meme Making App</h2>
             <a class="subscribe">Subscribe</a>
@@ -23,22 +23,34 @@
             </div>
 
             <div id="upload-image">
-            <input type="file" id="image" name="image" accept="image/jpeg, image/png, image/jpg">
-            </div>
-
-            <div id="button">
-            <button id="button-actual" type="button">MakeNow</button>
+            <input type="file" id="image" name="image" accept="image/jpeg, image/png, image/jpg, image/webp" onchange="loadFile(event)">
             </div>
         </div>
     </section>
+    <div id="meme">
+        <img id ="output"/>
+    </div>
+    <section>
+        <div class="container">
+            <div id="button">
+                <button id="button-actual" type="button">MakeNow</button>
+            </div>
+        </div>
+    </section>
+
     <div class="container">
         <p id="your-meme"> Your meme:</p>
     </div>
-    <div id="meme">
-        <img src=""/>
-    </div>
 
-   <div id="box-model" ><img id ="output" class="image-class"/></div> 
+    <section id="final-output">
+        
+    </section>
+
+
+
+
+
+ 
 
     
     
