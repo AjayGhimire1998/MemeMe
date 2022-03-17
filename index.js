@@ -29,7 +29,7 @@ button.addEventListener('click', event => {
     const jokes = data.joke;
     const words = jokes.match(/(\w+)/g).length;  //    \w+    between one and unlimited word characters
                                                 //    /g     greedy - don't stop after the first match
-    // console.log(words);
+    console.log(words);
     if(words < 30){
     
         const firstHalf = jokes.split(' ',words/2).join(' ')
@@ -57,6 +57,8 @@ button.addEventListener('click', event => {
         const imgUrl = imgTag.src;
 
         console.log(imgUrl)
+
+        //TODO 🛑🛑  set the file from the file input above as the  background image of the div#final-output
 
         // finalOutput.style.backgroundImage = "url("+ imgUrl+")"
 
